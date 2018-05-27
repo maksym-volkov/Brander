@@ -76,15 +76,6 @@ void		filling_int_map(t_board *board)
 		}
 	}
 	board->intmap.end = board->intmap.map[board->end[1]][board->end[0]];
-	y = -1;
-	while (++y < board->max_y)
-	{
-		x = -1;
-		while (++x < board->max_x)
-			printf("%i ", board->intmap.map[y][x]);
-		printf("\n");
-	}
-	printf("-----------------\n");
 	if (board->intmap.end == 0)
 	{
 		printf("%s\n", "there is no path");
