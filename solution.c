@@ -68,7 +68,7 @@ void		filling_int_map(t_board *board)
 		}
 		if (board->intmap.map[board->end[1]][board->end[0]] != 0)
 			break ;
-		if (y == board->max_y - 1 && cur < board->max_x + board->max_y)
+		if (y == board->max_y - 1 && cur < ((board->max_x + board->max_y) * 2))
 		{
 			cur++;
 			y = -1;
