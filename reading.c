@@ -86,7 +86,8 @@ void			reading(char *file, t_board *board)
 
 	stream = fopen(file, "r");
 	i = -1;
-
+	if (!stream)
+		error_exit();
 	if ((getline(&line, &len, stream)) == -1)
 			error_exit();
 	while (line[++i])
